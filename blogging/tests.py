@@ -59,8 +59,10 @@ class FrontEndTestCase(TestCase):
             title = "Post %d Title" % count
             post = Post.objects.get(title=title)
             resp = self.client.get('/posts/%d/' % post.pk)
+            print(f'Title={title}\nPost={post},resp={resp.status_code}')
             if count < 6:
                 self.assertEqual(resp.status_code, 200)
                 self.assertContains(resp, title)
-            else:
-                self.assertEqual(resp.status_code, 404)
+            # 11/6/2023 removing this portion due to change in blogging/views.py for assignment 08
+            # else:
+            #     self.assertEqual(resp.status_code, 404)
