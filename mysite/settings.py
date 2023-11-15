@@ -82,15 +82,15 @@ TEMPLATES = [
     },
 ]
 
-SOCIALACCOUNT_PROVIDERS = {
-    "github": {
-        "APP": {
-            "client_id": "6ca46466f4599300cdfd",
-            "secret": "04dd2bbb82967d08b1562bab2fcd8e6988acf027",
-            "key": "",
-        }
-    }
-}
+# SOCIALACCOUNT_PROVIDERS = {
+#     "github": {
+#         "APP": {
+#             "client_id": "47b590f918b930de1b7b",
+#             "secret": "04dd2bbb82967d08b1562bab2fcd8e6988acf027",
+#             "key": "",
+#         }
+#     }
+# }
 
 WSGI_APPLICATION = "mysite.wsgi.application"
 
